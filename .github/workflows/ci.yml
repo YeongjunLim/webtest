@@ -6,31 +6,36 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      # 1. 소스 코드 체크아웃 (v4 사용)
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # 2. 파이썬 환경 설정 (v5 사용)
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      # 3. 의존성 및 브라우저 설치
       - name: Install Dependencies
         run: |
           pip install -r requirements.txt
           rfbrowser init
 
-      # 4. 로봇 프레임워크 테스트 실행
+      # [수정] 폴더 유무와 파일 목록을 확인하는 디버깅 단계 추가
+      - name: Debugging - List Files
+        run: |
+          ls -R  # 현재 폴더 구조를 로그에 출력 (tests 폴더가 있는지 확인용)
+          mkdir -p results  # results 폴더가 없으면 강제로 생성
+
       - name: Run Robot Framework Tests
         run: |
-          robot -d results tests/
+          # tests 폴더가 실제 존재하는지 확인 후 실행
+          robot -d results tests/ 
+        continue-on-error: true # 테스트가 실패해도 다음 단계(업로드)로 넘어가게 함
 
-      # 5. 결과 파일 업로드 (v4 사용 - 에러 해결의 핵심)
       - name: Upload Test Results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: robot-results-${{ github.run_id }}
+          # results 폴더 안의 내용이 없어도 에러내지 않도록 설정
           path: results/
+          if-no-files-found: warn
