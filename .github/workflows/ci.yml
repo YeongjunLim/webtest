@@ -24,10 +24,20 @@ jobs:
 
       - name: Run Robot Framework Tests
         run: |
-          # 결과가 없으면 배포가 안되므로, 테스트가 실패해도 계속 진행
-          robot -d results tests/ || true
-          # log.html을 index.html로 복사해서 주소만 쳐도 나오게 함
-          cp results/log.html results/index.html
+          # 1. results 폴더 미리 생성
+          mkdir -p results
+          
+          # 2. 'tests' 폴더 대신 현재 위치(.)에서 모든 .robot 파일을 찾아 실행
+          # 만약 폴더명이 'test'(단수)이거나 대문자 'Tests'여도 다 찾아냅니다.
+          robot -d results . || true
+          
+          # 3. 파일이 생성되었는지 확인 후 복사
+          if [ -f "results/log.html" ]; then
+            cp results/log.html results/index.html
+          else
+            echo "Error: log.html was not created!"
+            exit 1
+          fi
 
       # 핵심: GitHub Pages로 결과 파일 배포
       - name: Deploy Report to GitHub Pages
