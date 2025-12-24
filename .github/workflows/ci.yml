@@ -25,7 +25,9 @@ jobs:
       - name: Run Robot Framework Tests
         run: |
           # 결과가 없으면 배포가 안되므로, 테스트가 실패해도 계속 진행
-          robot -d results tests/ || true 
+          robot -d results tests/ || true
+          # log.html을 index.html로 복사해서 주소만 쳐도 나오게 함
+          cp results/log.html results/index.html
 
       # 핵심: GitHub Pages로 결과 파일 배포
       - name: Deploy Report to GitHub Pages
