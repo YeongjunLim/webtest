@@ -33,8 +33,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: robot-results-${{ github.run_id }}
-<<<<<<<< HEAD:workflows/ci.yml
           path: results/
-========
-          path: results/
->>>>>>>> 78136f6caccd5782f6bab8a90e40b9f5f8abe6ff:workflows/robot.ci.yml
