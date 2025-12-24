@@ -1,56 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.10.19 on linux)" generated="2025-12-24T13:40:17.030341" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.10.19 on linux)" generated="2025-12-24T13:40:53.541492" rpa="false" schemaversion="5">
 <suite id="s1" name="Webtest" source="/home/runner/work/webtest/webtest">
 <suite id="s1-s1" name="Tests" source="/home/runner/work/webtest/webtest/tests">
 <suite id="s1-s1-s1" name="Elements" source="/home/runner/work/webtest/webtest/tests/elements.robot">
 <test id="s1-s1-s1-t1" name="Verify DemoQA Text Box Submission" line="5">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-12-24T13:40:17.200067" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/webtest/webtest/results/browser/traces/temp/3df6c244-fc11-40f9-a62a-3bfb90b51ae3"}</msg>
-<msg time="2025-12-24T13:40:17.204254" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/Browser/wrapper/index.js using at 127.0.0.1:59215</msg>
-<msg time="2025-12-24T13:40:18.549395" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/webtest/webtest/results/browser/traces/temp/3df6c244-fc11-40f9-a62a-3bfb90b51ae3"}</msg>
+<msg time="2025-12-24T13:40:53.691716" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/webtest/webtest/results/browser/traces/temp/3c982f4b-a29b-4445-85b0-f8b70692b6cf"}</msg>
+<msg time="2025-12-24T13:40:53.695106" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/Browser/wrapper/index.js using at 127.0.0.1:43413</msg>
+<msg time="2025-12-24T13:40:55.092638" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/webtest/webtest/results/browser/traces/temp/3c982f4b-a29b-4445-85b0-f8b70692b6cf"}</msg>
 <arg>browser=chromium</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-12-24T13:40:17.199395" elapsed="1.350250"/>
+<status status="PASS" start="2025-12-24T13:40:53.690992" elapsed="1.401948"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-12-24T13:40:25.679516" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/text-box</msg>
-<msg time="2025-12-24T13:40:25.679625" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-12-24T13:41:05.140183" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-12-24T13:41:05.140373" level="INFO">See also file:///home/runner/work/webtest/webtest/results/playwright-log.txt for additional details.</msg>
+<msg time="2025-12-24T13:41:05.141037" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://demoqa.com/text-box", waiting until "load"
+</msg>
 <arg>https://demoqa.com/text-box</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-12-24T13:40:18.549967" elapsed="7.129878"/>
+<status status="FAIL" start="2025-12-24T13:40:55.093319" elapsed="10.053779">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://demoqa.com/text-box", waiting until "load"
+</status>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-12-24T13:40:25.680762" level="INFO">Fills the text 'Gemini QA' in the given field.</msg>
 <arg>id=userName</arg>
 <arg>Gemini QA</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-12-24T13:40:25.680115" elapsed="0.052387"/>
+<status status="NOT RUN" start="2025-12-24T13:41:05.147461" elapsed="0.000143"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-12-24T13:40:25.733506" level="INFO">Fills the text 'test@example.com' in the given field.</msg>
 <arg>id=userEmail</arg>
 <arg>test@example.com</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-12-24T13:40:25.732850" elapsed="0.010547"/>
+<status status="NOT RUN" start="2025-12-24T13:41:05.147832" elapsed="0.000097"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-12-24T13:40:25.744192" level="INFO">Clicks the element 'id=submit'.</msg>
 <arg>id=submit</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-24T13:40:25.743631" elapsed="0.041243"/>
+<status status="NOT RUN" start="2025-12-24T13:41:05.148111" elapsed="0.000083"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-12-24T13:40:25.820456" level="INFO">Text: 'Name:Gemini QA'</msg>
 <arg>id=name</arg>
 <arg>contains</arg>
 <arg>Gemini QA</arg>
@@ -58,36 +62,38 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-24T13:40:25.785159" elapsed="0.035459"/>
+<status status="NOT RUN" start="2025-12-24T13:41:05.148357" elapsed="0.000085"/>
 </kw>
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2025-12-24T13:40:25.906973" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2025-12-24T13:40:25.820916" elapsed="0.086253"/>
+<status status="NOT RUN" start="2025-12-24T13:41:05.148624" elapsed="0.000080"/>
 </kw>
-<msg time="2025-12-24T13:40:25.919763" level="INFO">Switching context to context=5b61208b-e10e-4c00-a355-ed0746a7f597 in CURRENT</msg>
-<msg time="2025-12-24T13:40:25.927910" level="INFO">Successfully changed active context: context=5b61208b-e10e-4c00-a355-ed0746a7f597</msg>
-<msg time="2025-12-24T13:40:25.955111" level="INFO">Successfully closed Context</msg>
+<msg time="2025-12-24T13:41:05.162288" level="INFO">Switching context to context=9fa327d0-11fc-4cf8-88b3-b24ec328f575 in CURRENT</msg>
+<msg time="2025-12-24T13:41:05.169156" level="INFO">Successfully changed active context: context=9fa327d0-11fc-4cf8-88b3-b24ec328f575</msg>
+<msg time="2025-12-24T13:41:05.233198" level="INFO">Successfully closed Context</msg>
 <doc>Text Box에 값을 입력하고 정상 제출되는지 확인합니다.</doc>
-<status status="PASS" start="2025-12-24T13:40:17.197781" elapsed="8.709635"/>
+<status status="FAIL" start="2025-12-24T13:40:53.689341" elapsed="11.459678">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://demoqa.com/text-box", waiting until "load"
+</status>
 </test>
-<status status="PASS" start="2025-12-24T13:40:17.062277" elapsed="8.893965"/>
+<status status="FAIL" start="2025-12-24T13:40:53.567913" elapsed="11.666199"/>
 </suite>
-<status status="PASS" start="2025-12-24T13:40:17.061268" elapsed="8.900882"/>
+<status status="FAIL" start="2025-12-24T13:40:53.566918" elapsed="11.674829"/>
 </suite>
-<status status="PASS" start="2025-12-24T13:40:17.031532" elapsed="8.931460"/>
+<status status="FAIL" start="2025-12-24T13:40:53.542417" elapsed="11.700424"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Webtest" id="s1" pass="1" fail="0" skip="0">Webtest</stat>
-<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Webtest.Tests</stat>
-<stat name="Elements" id="s1-s1-s1" pass="1" fail="0" skip="0">Webtest.Tests.Elements</stat>
+<stat name="Webtest" id="s1" pass="0" fail="1" skip="0">Webtest</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">Webtest.Tests</stat>
+<stat name="Elements" id="s1-s1-s1" pass="0" fail="1" skip="0">Webtest.Tests.Elements</stat>
 </suite>
 </statistics>
 <errors>
