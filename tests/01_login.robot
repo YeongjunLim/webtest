@@ -1,9 +1,10 @@
 *** Settings ***
-Suite Setup       New Browser    chromium    headless=True
+Suite Setup       setup
 Test Setup        New Page    https://demoqa.com/login
 Test Teardown     Close Page
 Library           Browser
 Variables         ../config.py
+Resource          ../common_library.robot
 
 *** Test Cases ***
 TC-login-01
@@ -45,10 +46,3 @@ TC-login-05
     # 다시 로그인 페이지로 돌아왔는지 검증
     Wait For Condition    url    contains    /login
     Wait For Elements State    id=login    visible
-
-*** Keywords ***
-Login
-    [Arguments]    ${id}    ${pw}
-    Fill Text    id=userName    ${id}
-    Fill Text    id=password    ${pw}
-    Click    id=login

@@ -1,9 +1,10 @@
 *** Settings ***
-Suite Setup       New Browser    chromium    headless=True
+Suite Setup       setup
 Test Setup        New Page    https://demoqa.com/books
 Test Teardown     Close Page
 Library           Browser
 Variables         ../config.py
+Resource          ../common_library.robot
 
 *** Test Cases ***
 TC-bookstore-01
