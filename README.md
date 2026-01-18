@@ -1,70 +1,73 @@
-📋 Web Automation Portfolio (DemoQA)
-Robot Framework와 **Playwright(Browser Library)**를 활용한 웹 UI 자동화 테스트 프로젝트입니다.
+📑 Book Store App Test Automation (Playwright)
+본 프로젝트는 Robot Framework와 **Browser Library(Playwright)**를 활용하여 DemoQA 'Book Store' 서비스의 주요 비즈니스 로직을 자동화한 QA 포트폴리오입니다. 
++2
 
-GitHub Actions를 통해 CI/CD 환경을 구축하였으며, 모든 테스트 결과는 실시간 웹 리포트로 제공됩니다.
+🚀 프로젝트 개요
+사용자 가입 유효성 검사, 인증(Login), 도서 검색 및 상세 정보 확인 등 핵심 사용자 시나리오를 자동화하여 소프트웨어 품질을 검증합니다. 
++2
 
-🚀 1. 실시간 테스트 리포트 (Live Report)
-이 프로젝트는 매 커밋마다 자동으로 테스트를 수행하고 그 결과를 웹에 게시합니다.
+📂 프로젝트 구조 및 테스트 스코프
+관심사 분리(SoC) 원칙에 따라 3개의 독립적인 테스트 스위트로 구성되었습니다.
 
-아래 링크에서 최신 테스트 수행 로그와 스크린샷을 확인할 수 있습니다.
+1. 회원가입 유효성 검사 (00_register.robot) 
 
-🔗 실시간 테스트 리포트 확인하기 (클릭 시 Robot Framework의 상세 로그 페이지로 이동합니다.)
 
-🛠 2. 주요 기술 스택 (Tech Stack)
-언어: Python 3.10
+입력 폼 검증: 필수 필드 누락 시 UI 피드백(CSS 에러 클래스) 확인. 
++1
 
-프레임워크: Robot Framework
 
-라이브러리: Browser Library (Playwright 기반)
+정책 검증: 비밀번호 복잡성 미달 시 페이지 전환 차단 확인. 
 
-CI/CD: GitHub Actions
 
-배포: GitHub Pages
+보안 요소 확인: CAPTCHA 미체크 시 시스템 메시지("Please verify reCaptcha...") 노출 검증. 
 
-💡 3. 핵심 자동화 전략
-Page Object Model (POM) 적용: 유지보수성을 높이기 위해 페이지 요소(Selectors)와 공통 키워드를 분리하여 관리합니다.
+2. 사용자 인증 (01_login.robot) 
 
-CI/CD 파이프라인: push 또는 pull_request 발생 시 Headless 모드로 브라우저 테스트가 자동 수행됩니다.
 
-가시성 확보: 테스트 실패 시 자동으로 스크린샷을 캡처하고, 이를 웹 리포트에 포함하여 원인 분석을 용이하게 했습니다.
+로그인 시나리오: 성공 시 프로필 이동 및 실패 시(비밀번호 오류, 존재하지 않는 계정) 에러 핸들링 검증. 
++3
 
-연습 대상: DemoQA 사이트의 복잡한 UI 요소(Text Box, Buttons 등)를 안정적으로 핸들링합니다.
 
-📂 4. 프로젝트 구조
-Plaintext
+접근 제어: 로그인 후 세션 유지 및 로그아웃 후 권한 박멸 확인. 
 
-.
-├── .github/workflows/    # CI/CD (GitHub Actions) 설정
-├── tests/                # 실제 테스트 시나리오 (.robot 파일)
-├── resources/            # 공통 키워드 및 페이지 오브젝트 (추가 예정)
-├── results/              # 테스트 결과물 (CI 실행 시 생성)
-├── requirements.txt      # 의존성 라이브러리 목록
-└── README.md             # 프로젝트 설명서
-🏃 5. 로컬에서 실행 방법
-본 프로젝트를 로컬 환경에서 실행하려면 아래 명령어를 순서대로 입력하세요.
+
+Keywords 활용: 중복 코드를 방지하기 위해 Login 키워드를 정의하여 유지보수성 향상. 
+
+3. 도서 라이브러리 관리 (02_BookStore.robot) 
+
+
+데이터 로드: 페이지 진입 시 도서 목록의 동적 로딩 여부 확인. 
+
+
+검색 로직: 특정 키워드 검색 시 결과 테이블의 행(Row) 개수 및 데이터 일치성 검증. 
+
+
+상세 정보: 상세 페이지 진입 시 URL 파라미터(ISBN) 정합성 확인. 
+
+
+UI 제어: 페이지당 표시 행 수 변경 등 테이블 컨트롤 기능 검증. 
+
+💡 기술적 트러블슈팅 및 핵심 역량
+✅ 동적 상태 기반 동기화 (Dynamic Wait)
+단순 Sleep 사용을 지양하고, Wait For Condition 및 Wait For Elements State를 사용하여 비동기적으로 변하는 웹 페이지 상태에 맞춘 안정적인 테스트를 구현했습니다. 
++3
+
+✅ CSS 속성 검증을 통한 UI 테스팅
+에러 발생 시 시각적으로 표시되는 빨간 테두리를 확인하기 위해 Get Attribute 키워드로 HTML 클래스의 변화(is-invalid)를 추적하는 정밀한 UI 검증 방식을 채택했습니다. 
++1
+
+✅ CAPTCHA 대응 전략
+자동화가 어려운 CAPTCHA 구간에 매몰되지 않고, 이를 인지한 시스템의 '에러 메시지 처리'를 검증 포인트로 설정하여 테스트 커버리지를 전략적으로 확보했습니다. 
++1
+
+🏃 실행 방법
+의존성 설치: pip install robotframework-browser
+
+드라이버 초기화: rfbrowser init
+
+전체 테스트 실행:
 
 Bash
 
-# 1. 저장소 클론
-git clone https://github.com/YeongjunLim/webtest.git
-cd webtest
-
-# 2. 필수 라이브러리 설치
-pip install -r requirements.txt
-
-# 3. 브라우저 라이브러리 초기화
-rfbrowser init
-
-# 4. 테스트 실행
 robot -d results tests/
-✉️ Contact
-Name: 임영준 (Yeongjun Lim)
-
-GitHub: YeongjunLim
-
-💡 리크루터에게 드리는 팁
-README 상단에 Status Badge를 달아보세요. (성공 시 Passing 표시)
-
-방법: ![Robot CI](https://github.com/YeongjunLim/webtest/actions/workflows/robot-ci.yml/badge.svg) 문구를 맨 위에 추가.
-
-스크립트를 다 작성하신 후, 리포트(log.html)의 예쁜 스크린샷 한 장을 README 중간에 삽입하면 시각적 효과가 배가 됩니다.
+성공적으로 테스트 케이스들이 정리되었습니다. 이제 이 README와 함께 GitHub 레포지토리에 올리시면 깔끔한 자동화 포트폴리오가 완성됩니다. 추가로 보완하고 싶은 설명이 있으신가요?
