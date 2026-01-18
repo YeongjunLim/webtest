@@ -1,3 +1,6 @@
+## 📊 [테스트 실행 결과 리포트 보기 (클릭)](https://yeongjunlim.github.io/webtest/)
+Note: 위 링크를 통해 실제 수행된 15개 테스트 케이스의 상세 로그와 Pass/Fail 통계를 실시간으로 확인할 수 있습니다.
+
 ## 📑 Book Store App Test Automation (Playwright)
 본 프로젝트는 Robot Framework와 **Browser Library(Playwright)**를 활용하여 DemoQA 'Book Store' 서비스의 주요 비즈니스 로직을 자동화한 QA 포트폴리오입니다. 
 
