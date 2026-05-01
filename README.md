@@ -1,3 +1,7 @@
+```markdown
+![CI](https://github.com/YeongjunLim/webtest/actions/workflows/[워크플로우파일명].yml/badge.svg)
+```
+
 ## 📊 [테스트 실행 결과 리포트 보기 (클릭)](https://yeongjunlim.github.io/webtest/)
 Note: 위 링크를 통해 실제 수행된 15개 테스트 케이스의 상세 로그와 Pass/Fail 통계를 실시간으로 확인할 수 있습니다.
 
@@ -45,9 +49,30 @@ Note: 위 링크를 통해 실제 수행된 15개 테스트 케이스의 상세 
 ### ✅ CAPTCHA 대응 전략
 자동화가 어려운 CAPTCHA 구간에 매몰되지 않고, 이를 인지한 시스템의 '에러 메시지 처리'를 검증 포인트로 설정하여 테스트 커버리지를 전략적으로 확보했습니다. 
 
-## 🏃 실행 방법
-- 전체 테스트 실행:
+로 교체하세요:
 
-```Bash
-robot -d results tests/
+## ⚙️ 사전 요구사항 (Prerequisites)
+
+- Python 3.9 이상
+- Node.js 18 이상 (Playwright 브라우저 설치에 필요)
+
+```bash
+pip install -r requirements.txt
+rfbrowser init
 ```
+
+## 🏃 실행 방법
+### 전체 테스트 실행
+`robot -d results tests/`
+
+### 스위트별 실행  
+```
+robot -d results tests/00_register.robot
+robot -d results tests/01_login.robot
+robot -d results tests/02_BookStore.robot
+```
+
+### 리포트 확인  
+테스트 실행 후 results/ 폴더의 report.html 또는 아래 링크에서 확인:
+[👉 테스트 실행 결과 리포트 보기 (클릭)](https://yeongjunlim.github.io/webtest/)
+
