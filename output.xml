@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.10.20 on linux)" generated="2026-05-01T09:10:30.320589" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.10.20 on linux)" generated="2026-05-01T09:13:28.667135" rpa="false" schemaversion="5">
 <suite id="s1" name="Webtest" source="/home/runner/work/webtest/webtest">
 <suite id="s1-s1" name="Tests" source="/home/runner/work/webtest/webtest/tests">
 <suite id="s1-s1-s1" name="00 Register" source="/home/runner/work/webtest/webtest/tests/00_register.robot">
 <kw name="setup" owner="common_library" type="SETUP">
 <kw name="Set Browser Timeout" owner="Browser">
-<msg time="2026-05-01T09:10:30.491982" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/Browser/wrapper/index.js using at 127.0.0.1:33875</msg>
+<msg time="2026-05-01T09:13:28.853514" level="INFO">Starting Browser process /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages/Browser/wrapper/index.js using at 127.0.0.1:55663</msg>
 <arg>${timeout}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<status status="PASS" start="2026-05-01T09:10:30.486988" elapsed="0.435963"/>
+<status status="PASS" start="2026-05-01T09:13:28.848916" elapsed="0.440841"/>
 </kw>
 <kw name="New Browser" owner="Browser">
-<msg time="2026-05-01T09:10:30.924194" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/webtest/webtest/results/browser/traces/temp/a5c47b77-dc49-44ca-8dd0-a0b2afc54f88"}</msg>
-<msg time="2026-05-01T09:10:31.841857" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/webtest/webtest/results/browser/traces/temp/a5c47b77-dc49-44ca-8dd0-a0b2afc54f88"}</msg>
+<msg time="2026-05-01T09:13:29.290975" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/runner/work/webtest/webtest/results/browser/traces/temp/eb12bdc0-8e29-447a-a17b-2deab41755c8"}</msg>
+<msg time="2026-05-01T09:13:29.431935" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/runner/work/webtest/webtest/results/browser/traces/temp/eb12bdc0-8e29-447a-a17b-2deab41755c8"}</msg>
 <arg>chromium</arg>
 <arg>headless=True</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-05-01T09:10:30.923275" elapsed="0.918839"/>
+<status status="PASS" start="2026-05-01T09:13:29.290056" elapsed="0.142149"/>
 </kw>
-<status status="PASS" start="2026-05-01T09:10:30.486245" elapsed="1.356131"/>
+<status status="PASS" start="2026-05-01T09:13:28.848052" elapsed="0.584383"/>
 </kw>
 <test id="s1-s1-s1-t1" name="TC-register-01" line="10">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:10:33.061360" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/register</msg>
-<msg time="2026-05-01T09:10:33.061516" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:13:31.246651" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/register</msg>
+<msg time="2026-05-01T09:13:31.246765" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/register</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:10:31.848708" elapsed="1.213065"/>
+<status status="PASS" start="2026-05-01T09:13:29.439162" elapsed="1.807875"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>id=register</arg>
@@ -40,19 +40,19 @@
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-05-01T09:10:33.062213" elapsed="0.300575"/>
+<status status="PASS" start="2026-05-01T09:13:31.247509" elapsed="0.090536"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-05-01T09:10:33.363875" level="INFO">Clicks the element 'id=register'.</msg>
+<msg time="2026-05-01T09:13:31.338996" level="INFO">Clicks the element 'id=register'.</msg>
 <arg>id=register</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:33.363214" elapsed="0.377164"/>
+<status status="PASS" start="2026-05-01T09:13:31.338379" elapsed="0.057059"/>
 </kw>
 <kw name="Get Attribute" owner="Browser">
-<msg time="2026-05-01T09:10:33.790169" level="INFO">Attribute is: 'mr-sm-2 is-invalid form-control'</msg>
-<msg time="2026-05-01T09:10:33.791585" level="INFO">${first_name_class} = mr-sm-2 is-invalid form-control</msg>
+<msg time="2026-05-01T09:13:31.418353" level="INFO">Attribute is: 'mr-sm-2 is-invalid form-control'</msg>
+<msg time="2026-05-01T09:13:31.418634" level="INFO">${first_name_class} = mr-sm-2 is-invalid form-control</msg>
 <var>${first_name_class}</var>
 <arg>id=firstname</arg>
 <arg>class</arg>
@@ -60,17 +60,17 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:33.740715" elapsed="0.050944"/>
+<status status="PASS" start="2026-05-01T09:13:31.395788" elapsed="0.022901"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${first_name_class}</arg>
 <arg>is-invalid</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2026-05-01T09:10:33.792052" elapsed="0.001035"/>
+<status status="PASS" start="2026-05-01T09:13:31.419020" elapsed="0.000923"/>
 </kw>
 <kw name="Get Attribute" owner="Browser">
-<msg time="2026-05-01T09:10:33.837857" level="INFO">Attribute is: 'mr-sm-2 is-invalid form-control'</msg>
-<msg time="2026-05-01T09:10:33.838194" level="INFO">${last_name_class} = mr-sm-2 is-invalid form-control</msg>
+<msg time="2026-05-01T09:13:31.600796" level="INFO">Attribute is: 'mr-sm-2 is-invalid form-control'</msg>
+<msg time="2026-05-01T09:13:31.601062" level="INFO">${last_name_class} = mr-sm-2 is-invalid form-control</msg>
 <var>${last_name_class}</var>
 <arg>id=lastname</arg>
 <arg>class</arg>
@@ -78,95 +78,95 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:33.793415" elapsed="0.044824"/>
+<status status="PASS" start="2026-05-01T09:13:31.420684" elapsed="0.180428"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${last_name_class}</arg>
 <arg>is-invalid</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2026-05-01T09:10:33.838550" elapsed="0.000642"/>
+<status status="PASS" start="2026-05-01T09:13:31.601529" elapsed="0.000939"/>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:10:33.845521" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:10:33.871769" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:13:31.608196" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:13:31.653908" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:10:33.839480" elapsed="0.032775"/>
+<status status="PASS" start="2026-05-01T09:13:31.602874" elapsed="0.051329"/>
 </kw>
-<msg time="2026-05-01T09:10:33.883104" level="INFO">Switching context to context=a09052ba-cbef-47e2-bbe3-3d212a68ff93 in CURRENT</msg>
-<msg time="2026-05-01T09:10:33.888917" level="INFO">Successfully changed active context: context=a09052ba-cbef-47e2-bbe3-3d212a68ff93</msg>
-<msg time="2026-05-01T09:10:33.895310" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:13:31.664597" level="INFO">Switching context to context=1dcf7de2-b76f-418d-9edf-34910cf5b4c8 in CURRENT</msg>
+<msg time="2026-05-01T09:13:31.668214" level="INFO">Successfully changed active context: context=1dcf7de2-b76f-418d-9edf-34910cf5b4c8</msg>
+<msg time="2026-05-01T09:13:31.672943" level="INFO">Successfully closed Context</msg>
 <doc>모든 필드를 비우고 가입 시도 시 테두리가 빨간색으로 변하는지 확인합니다.</doc>
-<status status="PASS" start="2026-05-01T09:10:31.842533" elapsed="2.029876"/>
+<status status="PASS" start="2026-05-01T09:13:29.432593" elapsed="2.221755"/>
 </test>
 <test id="s1-s1-s1-t2" name="TC-register-02" line="20">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:10:34.926435" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/register</msg>
-<msg time="2026-05-01T09:10:34.926559" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:13:33.635738" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/register</msg>
+<msg time="2026-05-01T09:13:33.635852" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/register</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:10:33.899350" elapsed="1.027388"/>
+<status status="PASS" start="2026-05-01T09:13:31.676883" elapsed="1.959151"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-05-01T09:10:34.927808" level="INFO">${userName} = new_auto_user_01</msg>
+<msg time="2026-05-01T09:13:33.637137" level="INFO">${userName} = new_auto_user_01</msg>
 <var>${userName}</var>
 <arg>new_auto_user_01</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-05-01T09:10:34.927084" elapsed="0.000779"/>
+<status status="PASS" start="2026-05-01T09:13:33.636440" elapsed="0.000741"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-05-01T09:10:34.928310" level="INFO">${password} = weakpassword123</msg>
+<msg time="2026-05-01T09:13:33.637677" level="INFO">${password} = weakpassword123</msg>
 <var>${password}</var>
 <arg>weakpassword123</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-05-01T09:10:34.928003" elapsed="0.000337"/>
+<status status="PASS" start="2026-05-01T09:13:33.637326" elapsed="0.000387"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:34.928914" level="INFO">Fills the text 'YoungJun' in the given field.</msg>
+<msg time="2026-05-01T09:13:33.638343" level="INFO">Fills the text 'YoungJun' in the given field.</msg>
 <arg>id=firstname</arg>
 <arg>YoungJun</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:34.928476" elapsed="0.058711"/>
+<status status="PASS" start="2026-05-01T09:13:33.637853" elapsed="0.064858"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:34.988216" level="INFO">Fills the text 'Lim' in the given field.</msg>
+<msg time="2026-05-01T09:13:33.704537" level="INFO">Fills the text 'Lim' in the given field.</msg>
 <arg>id=lastname</arg>
 <arg>Lim</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:34.987536" elapsed="0.013156"/>
+<status status="PASS" start="2026-05-01T09:13:33.703104" elapsed="0.012153"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:35.001857" level="INFO">Fills the text 'new_auto_user_01' in the given field.</msg>
+<msg time="2026-05-01T09:13:33.716263" level="INFO">Fills the text 'new_auto_user_01' in the given field.</msg>
 <arg>id=userName</arg>
 <arg>${userName}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:35.001049" elapsed="0.015097"/>
+<status status="PASS" start="2026-05-01T09:13:33.715565" elapsed="0.010626"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:35.017648" level="INFO">Fills the text 'weakpassword123' in the given field.</msg>
+<msg time="2026-05-01T09:13:33.727638" level="INFO">Fills the text 'weakpassword123' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:35.016667" elapsed="0.106597"/>
+<status status="PASS" start="2026-05-01T09:13:33.726646" elapsed="0.014456"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-05-01T09:10:35.124348" level="INFO">Clicks the element 'id=register'.</msg>
+<msg time="2026-05-01T09:13:33.742047" level="INFO">Clicks the element 'id=register'.</msg>
 <arg>id=register</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:35.123628" elapsed="0.445266"/>
+<status status="PASS" start="2026-05-01T09:13:33.741437" elapsed="0.204820"/>
 </kw>
 <kw name="Wait For Condition" owner="Browser">
 <kw name="Get Url" owner="Browser">
@@ -176,7 +176,7 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2026-05-01T09:10:35.570599" elapsed="0.005069"/>
+<status status="PASS" start="2026-05-01T09:13:33.947448" elapsed="0.007471"/>
 </kw>
 <arg>url</arg>
 <arg>contains</arg>
@@ -184,107 +184,107 @@ unless it is completely visible.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for a condition, defined with Browser getter keywords to become True.</doc>
-<status status="PASS" start="2026-05-01T09:10:35.569351" elapsed="0.006533"/>
+<status status="PASS" start="2026-05-01T09:13:33.946560" elapsed="0.008617"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-05-01T09:10:35.576533" level="INFO">Form submitted but stayed on register page due to validation/captcha.</msg>
+<msg time="2026-05-01T09:13:33.955969" level="INFO">Form submitted but stayed on register page due to validation/captcha.</msg>
 <arg>Form submitted but stayed on register page due to validation/captcha.</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-05-01T09:10:35.576114" elapsed="0.000501"/>
+<status status="PASS" start="2026-05-01T09:13:33.955499" elapsed="0.000536"/>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:10:35.580794" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:10:35.605310" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:13:33.961666" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:13:33.971199" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:10:35.576996" elapsed="0.028670"/>
+<status status="PASS" start="2026-05-01T09:13:33.956363" elapsed="0.015109"/>
 </kw>
-<msg time="2026-05-01T09:10:35.614123" level="INFO">Switching context to context=a1e38308-8454-4ea9-856d-1c7b733c8f7a in CURRENT</msg>
-<msg time="2026-05-01T09:10:35.620085" level="INFO">Successfully changed active context: context=a1e38308-8454-4ea9-856d-1c7b733c8f7a</msg>
-<msg time="2026-05-01T09:10:35.623107" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:13:33.980616" level="INFO">Switching context to context=5f083979-0fc2-453d-9fdb-97dd3912b58d in CURRENT</msg>
+<msg time="2026-05-01T09:13:33.984339" level="INFO">Successfully changed active context: context=5f083979-0fc2-453d-9fdb-97dd3912b58d</msg>
+<msg time="2026-05-01T09:13:33.987715" level="INFO">Successfully closed Context</msg>
 <doc>복잡성 규칙(대문자, 특수문자 등)에 어긋나는 비밀번호 입력 시 반응을 확인합니다.</doc>
-<status status="PASS" start="2026-05-01T09:10:33.895817" elapsed="1.710062"/>
+<status status="PASS" start="2026-05-01T09:13:31.673494" elapsed="2.298145"/>
 </test>
 <test id="s1-s1-s1-t3" name="TC-register-03" line="34">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:10:36.681371" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/register</msg>
-<msg time="2026-05-01T09:10:36.681523" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:13:35.787842" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/register</msg>
+<msg time="2026-05-01T09:13:35.787985" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/register</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:10:35.626447" elapsed="1.055357"/>
+<status status="PASS" start="2026-05-01T09:13:33.991097" elapsed="1.797200"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-05-01T09:10:36.683022" level="INFO">${userName} = new_auto_user_03</msg>
+<msg time="2026-05-01T09:13:35.789562" level="INFO">${userName} = new_auto_user_03</msg>
 <var>${userName}</var>
 <arg>new_auto_user_03</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-05-01T09:10:36.682237" elapsed="0.000840"/>
+<status status="PASS" start="2026-05-01T09:13:35.788732" elapsed="0.000892"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-05-01T09:10:36.683771" level="INFO">${password} = Test1234!</msg>
+<msg time="2026-05-01T09:13:35.790458" level="INFO">${password} = Test1234!</msg>
 <var>${password}</var>
 <arg>Test1234!</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-05-01T09:10:36.683288" elapsed="0.000554"/>
+<status status="PASS" start="2026-05-01T09:13:35.789859" elapsed="0.000660"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:36.684688" level="INFO">Fills the text 'YoungJun' in the given field.</msg>
+<msg time="2026-05-01T09:13:35.791486" level="INFO">Fills the text 'YoungJun' in the given field.</msg>
 <arg>id=firstname</arg>
 <arg>YoungJun</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:36.684051" elapsed="0.059533"/>
+<status status="PASS" start="2026-05-01T09:13:35.790752" elapsed="0.059785"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:36.744739" level="INFO">Fills the text 'Lim' in the given field.</msg>
+<msg time="2026-05-01T09:13:35.851556" level="INFO">Fills the text 'Lim' in the given field.</msg>
 <arg>id=lastname</arg>
 <arg>Lim</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:36.743999" elapsed="0.011864"/>
+<status status="PASS" start="2026-05-01T09:13:35.850852" elapsed="0.013569"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:36.756875" level="INFO">Fills the text 'new_auto_user_03' in the given field.</msg>
+<msg time="2026-05-01T09:13:35.865476" level="INFO">Fills the text 'new_auto_user_03' in the given field.</msg>
 <arg>id=userName</arg>
 <arg>${userName}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:36.756176" elapsed="0.010152"/>
+<status status="PASS" start="2026-05-01T09:13:35.864740" elapsed="0.010544"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:36.767422" level="INFO">Fills the text 'Test1234!' in the given field.</msg>
+<msg time="2026-05-01T09:13:35.876301" level="INFO">Fills the text 'Test1234!' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:36.766695" elapsed="0.093392"/>
+<status status="PASS" start="2026-05-01T09:13:35.875595" elapsed="0.012983"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-05-01T09:10:36.861512" level="INFO">Clicks the element 'id=register'.</msg>
+<msg time="2026-05-01T09:13:35.889887" level="INFO">Clicks the element 'id=register'.</msg>
 <arg>id=register</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:36.860698" elapsed="0.459847"/>
+<status status="PASS" start="2026-05-01T09:13:35.888979" elapsed="0.052391"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-05-01T09:10:37.377284" level="INFO">Waited for Element with selector id=name at state visible</msg>
+<msg time="2026-05-01T09:13:36.015822" level="INFO">Waited for Element with selector id=name at state visible</msg>
 <arg>id=name</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-05-01T09:10:37.320983" elapsed="0.056654"/>
+<status status="PASS" start="2026-05-01T09:13:35.941794" elapsed="0.074262"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-05-01T09:10:37.580738" level="INFO">Text: 'Please verify reCaptcha to register!'</msg>
+<msg time="2026-05-01T09:13:36.486174" level="INFO">Text: 'Please verify reCaptcha to register!'</msg>
 <arg>id=name</arg>
 <arg>==</arg>
 <arg>Please verify reCaptcha to register!</arg>
@@ -292,39 +292,39 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:37.378087" elapsed="0.202905"/>
+<status status="PASS" start="2026-05-01T09:13:36.016463" elapsed="0.469958"/>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:10:37.592128" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:10:37.622611" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:13:36.497260" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:13:36.525003" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:10:37.581624" elapsed="0.041398"/>
+<status status="PASS" start="2026-05-01T09:13:36.486963" elapsed="0.039143"/>
 </kw>
-<msg time="2026-05-01T09:10:37.630642" level="INFO">Switching context to context=261114f2-750e-4154-84a8-a9601efaef66 in CURRENT</msg>
-<msg time="2026-05-01T09:10:37.634337" level="INFO">Successfully changed active context: context=261114f2-750e-4154-84a8-a9601efaef66</msg>
-<msg time="2026-05-01T09:10:37.641263" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:13:36.534603" level="INFO">Switching context to context=28d4d50f-d80d-43d6-8598-c0259d027cbe in CURRENT</msg>
+<msg time="2026-05-01T09:13:36.538803" level="INFO">Successfully changed active context: context=28d4d50f-d80d-43d6-8598-c0259d027cbe</msg>
+<msg time="2026-05-01T09:13:36.542071" level="INFO">Successfully closed Context</msg>
 <doc>캡차를 체크하지 않았을 때의 상태를 확인합니다.</doc>
-<status status="PASS" start="2026-05-01T09:10:35.623601" elapsed="1.999619"/>
+<status status="PASS" start="2026-05-01T09:13:33.988417" elapsed="2.538504"/>
 </test>
 <test id="s1-s1-s1-t4" name="TC-register-04" line="47">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:10:38.637881" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/register</msg>
-<msg time="2026-05-01T09:10:38.638056" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:13:38.359364" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/register</msg>
+<msg time="2026-05-01T09:13:38.359566" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/register</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:10:37.646146" elapsed="0.992105"/>
+<status status="PASS" start="2026-05-01T09:13:36.546020" elapsed="1.813831"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-05-01T09:10:38.639410" level="INFO">Clicks the element 'id=gotologin'.</msg>
+<msg time="2026-05-01T09:13:38.361232" level="INFO">Clicks the element 'id=gotologin'.</msg>
 <arg>id=gotologin</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:38.638602" elapsed="0.081934"/>
+<status status="PASS" start="2026-05-01T09:13:38.360292" elapsed="0.085306"/>
 </kw>
 <kw name="Wait For Condition" owner="Browser">
 <kw name="Get Url" owner="Browser">
@@ -334,7 +334,7 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2026-05-01T09:10:38.721752" elapsed="0.002610"/>
+<status status="PASS" start="2026-05-01T09:13:38.446699" elapsed="0.003146"/>
 </kw>
 <arg>url</arg>
 <arg>contains</arg>
@@ -342,10 +342,10 @@ unless it is completely visible.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for a condition, defined with Browser getter keywords to become True.</doc>
-<status status="PASS" start="2026-05-01T09:10:38.720900" elapsed="0.003593"/>
+<status status="PASS" start="2026-05-01T09:13:38.445902" elapsed="0.004087"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-05-01T09:10:39.098875" level="INFO">Text: 'Login'</msg>
+<msg time="2026-05-01T09:13:38.905065" level="INFO">Text: 'Login'</msg>
 <arg>.text-center</arg>
 <arg>==</arg>
 <arg>Login</arg>
@@ -353,23 +353,23 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:38.724650" elapsed="0.374461"/>
+<status status="PASS" start="2026-05-01T09:13:38.450219" elapsed="0.455127"/>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:10:39.103019" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:10:39.165843" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:13:38.910343" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:13:38.917878" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:10:39.099725" elapsed="0.066459"/>
+<status status="PASS" start="2026-05-01T09:13:38.905954" elapsed="0.012138"/>
 </kw>
-<msg time="2026-05-01T09:10:39.173882" level="INFO">Switching context to context=2b10c238-aed8-4612-8806-9337fbb1eeca in CURRENT</msg>
-<msg time="2026-05-01T09:10:39.178216" level="INFO">Successfully changed active context: context=2b10c238-aed8-4612-8806-9337fbb1eeca</msg>
-<msg time="2026-05-01T09:10:39.181370" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:13:38.925832" level="INFO">Switching context to context=198c21fd-8377-47c6-81e1-a3aa70dec06a in CURRENT</msg>
+<msg time="2026-05-01T09:13:38.930984" level="INFO">Successfully changed active context: context=198c21fd-8377-47c6-81e1-a3aa70dec06a</msg>
+<msg time="2026-05-01T09:13:38.936650" level="INFO">Successfully closed Context</msg>
 <doc>회원가입 페이지에서 로그인 페이지로 정상적으로 돌아가는지 확인합니다.</doc>
-<status status="PASS" start="2026-05-01T09:10:37.641879" elapsed="1.524455"/>
+<status status="PASS" start="2026-05-01T09:13:36.542797" elapsed="2.375466"/>
 </test>
-<status status="PASS" start="2026-05-01T09:10:30.348750" elapsed="8.833499"/>
+<status status="PASS" start="2026-05-01T09:13:28.701391" elapsed="10.236096"/>
 </suite>
 <suite id="s1-s1-s2" name="01 Login" source="/home/runner/work/webtest/webtest/tests/01_login.robot">
 <kw name="setup" owner="common_library" type="SETUP">
@@ -378,61 +378,61 @@ unless it is completely visible.</doc>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<status status="PASS" start="2026-05-01T09:10:39.191226" elapsed="0.002086"/>
+<status status="PASS" start="2026-05-01T09:13:38.946526" elapsed="0.002084"/>
 </kw>
 <kw name="New Browser" owner="Browser">
-<msg time="2026-05-01T09:10:39.193941" level="INFO">Switching browser to browser=9b09c85f-0e29-4dc8-8c55-3e2c6d779b7d</msg>
-<msg time="2026-05-01T09:10:39.195729" level="INFO">Successfully changed active browser: browser=9b09c85f-0e29-4dc8-8c55-3e2c6d779b7d</msg>
-<msg time="2026-05-01T09:10:39.195808" level="INFO">Reusing existing browser with id: browser=9b09c85f-0e29-4dc8-8c55-3e2c6d779b7d</msg>
+<msg time="2026-05-01T09:13:38.949268" level="INFO">Switching browser to browser=018945ef-7c7c-44df-9fbb-b17e131cf03f</msg>
+<msg time="2026-05-01T09:13:38.950949" level="INFO">Successfully changed active browser: browser=018945ef-7c7c-44df-9fbb-b17e131cf03f</msg>
+<msg time="2026-05-01T09:13:38.951024" level="INFO">Reusing existing browser with id: browser=018945ef-7c7c-44df-9fbb-b17e131cf03f</msg>
 <arg>chromium</arg>
 <arg>headless=True</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-05-01T09:10:39.193485" elapsed="0.002407"/>
+<status status="PASS" start="2026-05-01T09:13:38.948775" elapsed="0.002314"/>
 </kw>
-<status status="PASS" start="2026-05-01T09:10:39.190915" elapsed="0.005084"/>
+<status status="PASS" start="2026-05-01T09:13:38.946234" elapsed="0.004995"/>
 </kw>
 <test id="s1-s1-s2-t1" name="TC-login-01" line="10">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:10:40.263974" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/login</msg>
-<msg time="2026-05-01T09:10:40.264133" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:13:40.658741" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/login</msg>
+<msg time="2026-05-01T09:13:40.658854" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:10:39.198813" elapsed="1.065582"/>
+<status status="PASS" start="2026-05-01T09:13:38.953963" elapsed="1.705076"/>
 </kw>
 <kw name="Login" owner="common_library">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:40.266594" level="INFO">Fills the text 'QALim' in the given field.</msg>
+<msg time="2026-05-01T09:13:40.660882" level="INFO">Fills the text 'QALim' in the given field.</msg>
 <arg>id=userName</arg>
 <arg>${id}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:40.265793" elapsed="0.057960"/>
+<status status="PASS" start="2026-05-01T09:13:40.660267" elapsed="0.060355"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:40.325126" level="INFO">Fills the text 'toolsQA!23' in the given field.</msg>
+<msg time="2026-05-01T09:13:40.721953" level="INFO">Fills the text 'toolsQA!23' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${pw}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:40.324167" elapsed="0.011546"/>
+<status status="PASS" start="2026-05-01T09:13:40.721015" elapsed="0.011775"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-05-01T09:10:40.336640" level="INFO">Clicks the element 'id=login'.</msg>
+<msg time="2026-05-01T09:13:40.733693" level="INFO">Clicks the element 'id=login'.</msg>
 <arg>id=login</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:40.336039" elapsed="0.255455"/>
+<status status="PASS" start="2026-05-01T09:13:40.733068" elapsed="0.062713"/>
 </kw>
 <arg>${userName}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-05-01T09:10:40.265006" elapsed="0.326767"/>
+<status status="PASS" start="2026-05-01T09:13:40.659462" elapsed="0.136556"/>
 </kw>
 <kw name="Wait For Condition" owner="Browser">
 <kw name="Get Url" owner="Browser">
@@ -442,7 +442,7 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" start="2026-05-01T09:10:40.593193" elapsed="1.660718"/>
+<status status="PASS" start="2026-05-01T09:13:40.797444" elapsed="1.998761"/>
 </kw>
 <arg>url</arg>
 <arg>contains</arg>
@@ -450,10 +450,10 @@ unless it is completely visible.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for a condition, defined with Browser getter keywords to become True.</doc>
-<status status="PASS" start="2026-05-01T09:10:40.592123" elapsed="1.662050"/>
+<status status="PASS" start="2026-05-01T09:13:40.796338" elapsed="2.000134"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-05-01T09:10:42.322126" level="INFO">Text: 'QALim'</msg>
+<msg time="2026-05-01T09:13:42.834188" level="INFO">Text: 'QALim'</msg>
 <arg>id=userName-value</arg>
 <arg>==</arg>
 <arg>${userName}</arg>
@@ -461,81 +461,81 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:42.254510" elapsed="0.067787"/>
+<status status="PASS" start="2026-05-01T09:13:42.796797" elapsed="0.037557"/>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:10:42.325635" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:10:42.341846" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:13:42.837441" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:13:42.851890" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:10:42.322733" elapsed="0.019422"/>
+<status status="PASS" start="2026-05-01T09:13:42.834809" elapsed="0.017467"/>
 </kw>
-<msg time="2026-05-01T09:10:42.351506" level="INFO">Switching context to context=99e41b7f-9d9f-4c44-91ab-d858c6ce35b3 in CURRENT</msg>
-<msg time="2026-05-01T09:10:42.356338" level="INFO">Successfully changed active context: context=99e41b7f-9d9f-4c44-91ab-d858c6ce35b3</msg>
-<msg time="2026-05-01T09:10:42.360068" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:13:42.862975" level="INFO">Switching context to context=9dc78b9f-6ec2-4231-bf8e-ee6039b2956a in CURRENT</msg>
+<msg time="2026-05-01T09:13:42.868482" level="INFO">Successfully changed active context: context=9dc78b9f-6ec2-4231-bf8e-ee6039b2956a</msg>
+<msg time="2026-05-01T09:13:42.871853" level="INFO">Successfully closed Context</msg>
 <doc>성공적인 로그인 후 프로필 페이지로 이동하는지 확인합니다.</doc>
-<status status="PASS" start="2026-05-01T09:10:39.196077" elapsed="3.146223"/>
+<status status="PASS" start="2026-05-01T09:13:38.951307" elapsed="3.901166"/>
 </test>
 <test id="s1-s1-s2-t2" name="TC-login-02" line="17">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:10:43.350779" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/login</msg>
-<msg time="2026-05-01T09:10:43.350930" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:13:44.539852" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/login</msg>
+<msg time="2026-05-01T09:13:44.540009" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:10:42.364671" elapsed="0.986504"/>
+<status status="PASS" start="2026-05-01T09:13:42.876149" elapsed="1.664207"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-05-01T09:10:43.352229" level="INFO">${invalid_pw} = WrongPass123!</msg>
+<msg time="2026-05-01T09:13:44.541786" level="INFO">${invalid_pw} = WrongPass123!</msg>
 <var>${invalid_pw}</var>
 <arg>WrongPass123!</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-05-01T09:10:43.351499" elapsed="0.000783"/>
+<status status="PASS" start="2026-05-01T09:13:44.540733" elapsed="0.001108"/>
 </kw>
 <kw name="Login" owner="common_library">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:43.353491" level="INFO">Fills the text 'QALim' in the given field.</msg>
+<msg time="2026-05-01T09:13:44.543510" level="INFO">Fills the text 'QALim' in the given field.</msg>
 <arg>id=userName</arg>
 <arg>${id}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:43.353037" elapsed="0.054656"/>
+<status status="PASS" start="2026-05-01T09:13:44.542811" elapsed="0.058029"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:43.408942" level="INFO">Fills the text 'WrongPass123!' in the given field.</msg>
+<msg time="2026-05-01T09:13:44.602200" level="INFO">Fills the text 'WrongPass123!' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${pw}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:43.408052" elapsed="0.011228"/>
+<status status="PASS" start="2026-05-01T09:13:44.601228" elapsed="0.011429"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-05-01T09:10:43.420210" level="INFO">Clicks the element 'id=login'.</msg>
+<msg time="2026-05-01T09:13:44.613574" level="INFO">Clicks the element 'id=login'.</msg>
 <arg>id=login</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:43.419574" elapsed="0.037835"/>
+<status status="PASS" start="2026-05-01T09:13:44.612941" elapsed="0.052841"/>
 </kw>
 <arg>${userName}</arg>
 <arg>${invalid_pw}</arg>
-<status status="PASS" start="2026-05-01T09:10:43.352567" elapsed="0.105054"/>
+<status status="PASS" start="2026-05-01T09:13:44.542187" elapsed="0.123844"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-05-01T09:10:44.987031" level="INFO">Waited for Element with selector id=name at state visible</msg>
+<msg time="2026-05-01T09:13:46.116361" level="INFO">Waited for Element with selector id=name at state visible</msg>
 <arg>id=name</arg>
 <arg>visible</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-05-01T09:10:43.457914" elapsed="1.529371"/>
+<status status="PASS" start="2026-05-01T09:13:44.666388" elapsed="1.450189"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-05-01T09:10:45.013496" level="INFO">Text: 'Invalid username or password!'</msg>
+<msg time="2026-05-01T09:13:46.143402" level="INFO">Text: 'Invalid username or password!'</msg>
 <arg>id=name</arg>
 <arg>==</arg>
 <arg>Invalid username or password!</arg>
@@ -543,72 +543,72 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:44.987577" elapsed="0.026075"/>
+<status status="PASS" start="2026-05-01T09:13:46.116842" elapsed="0.026718"/>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:10:45.016375" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:10:45.029656" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:13:46.146301" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:13:46.160013" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:10:45.014088" elapsed="0.015879"/>
+<status status="PASS" start="2026-05-01T09:13:46.143952" elapsed="0.016405"/>
 </kw>
-<msg time="2026-05-01T09:10:45.037369" level="INFO">Switching context to context=5d35cfc2-0d4e-44d3-8b13-842286eeef36 in CURRENT</msg>
-<msg time="2026-05-01T09:10:45.040881" level="INFO">Successfully changed active context: context=5d35cfc2-0d4e-44d3-8b13-842286eeef36</msg>
-<msg time="2026-05-01T09:10:45.045788" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:13:46.167983" level="INFO">Switching context to context=49f58b52-9193-4396-8abb-19a773d80be1 in CURRENT</msg>
+<msg time="2026-05-01T09:13:46.171897" level="INFO">Successfully changed active context: context=49f58b52-9193-4396-8abb-19a773d80be1</msg>
+<msg time="2026-05-01T09:13:46.175002" level="INFO">Successfully closed Context</msg>
 <doc>아이디는 맞지만 비밀번호가 틀린 경우 에러 메시지를 확인합니다.</doc>
-<status status="PASS" start="2026-05-01T09:10:42.360676" elapsed="2.669469"/>
+<status status="PASS" start="2026-05-01T09:13:42.872431" elapsed="3.288099"/>
 </test>
 <test id="s1-s1-s2-t3" name="TC-login-03" line="25">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:10:46.035309" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/login</msg>
-<msg time="2026-05-01T09:10:46.035463" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:13:48.130065" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/login</msg>
+<msg time="2026-05-01T09:13:48.130209" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:10:45.050300" elapsed="0.985434"/>
+<status status="PASS" start="2026-05-01T09:13:46.178697" elapsed="1.951700"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-05-01T09:10:46.036963" level="INFO">${NON_EXIST_ID} = ghost_user_99</msg>
+<msg time="2026-05-01T09:13:48.131401" level="INFO">${NON_EXIST_ID} = ghost_user_99</msg>
 <var>${NON_EXIST_ID}</var>
 <arg>ghost_user_99</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-05-01T09:10:46.036176" elapsed="0.000843"/>
+<status status="PASS" start="2026-05-01T09:13:48.130681" elapsed="0.000780"/>
 </kw>
 <kw name="Login" owner="common_library">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:46.038707" level="INFO">Fills the text 'ghost_user_99' in the given field.</msg>
+<msg time="2026-05-01T09:13:48.132853" level="INFO">Fills the text 'ghost_user_99' in the given field.</msg>
 <arg>id=userName</arg>
 <arg>${id}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:46.038013" elapsed="0.056913"/>
+<status status="PASS" start="2026-05-01T09:13:48.132367" elapsed="0.061158"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:46.096260" level="INFO">Fills the text 'toolsQA!23' in the given field.</msg>
+<msg time="2026-05-01T09:13:48.194980" level="INFO">Fills the text 'toolsQA!23' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${pw}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:46.095356" elapsed="0.009942"/>
+<status status="PASS" start="2026-05-01T09:13:48.193930" elapsed="0.012040"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-05-01T09:10:46.106110" level="INFO">Clicks the element 'id=login'.</msg>
+<msg time="2026-05-01T09:13:48.206907" level="INFO">Clicks the element 'id=login'.</msg>
 <arg>id=login</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:46.105547" elapsed="0.252836"/>
+<status status="PASS" start="2026-05-01T09:13:48.206302" elapsed="0.040278"/>
 </kw>
 <arg>${NON_EXIST_ID}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-05-01T09:10:46.037342" elapsed="0.321284"/>
+<status status="PASS" start="2026-05-01T09:13:48.131779" elapsed="0.114989"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-05-01T09:10:47.280722" level="INFO">Text: 'Invalid username or password!'</msg>
+<msg time="2026-05-01T09:13:50.234774" level="INFO">Text: 'Invalid username or password!'</msg>
 <arg>id=name</arg>
 <arg>==</arg>
 <arg>Invalid username or password!</arg>
@@ -616,43 +616,43 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:46.358902" elapsed="0.922012"/>
+<status status="PASS" start="2026-05-01T09:13:48.246984" elapsed="1.987950"/>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:10:47.283591" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:10:47.289455" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:13:50.237615" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:13:50.252406" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:10:47.281342" elapsed="0.008324"/>
+<status status="PASS" start="2026-05-01T09:13:50.235397" elapsed="0.017356"/>
 </kw>
-<msg time="2026-05-01T09:10:47.296214" level="INFO">Switching context to context=b458aaf5-d7ac-4a0b-9d23-7f7e855eca93 in CURRENT</msg>
-<msg time="2026-05-01T09:10:47.300307" level="INFO">Successfully changed active context: context=b458aaf5-d7ac-4a0b-9d23-7f7e855eca93</msg>
-<msg time="2026-05-01T09:10:47.303685" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:13:50.261393" level="INFO">Switching context to context=f34d2fac-c1d0-4f23-9cfa-eb065e157b29 in CURRENT</msg>
+<msg time="2026-05-01T09:13:50.266926" level="INFO">Successfully changed active context: context=f34d2fac-c1d0-4f23-9cfa-eb065e157b29</msg>
+<msg time="2026-05-01T09:13:50.271284" level="INFO">Successfully closed Context</msg>
 <doc>존재하지 않는 아이디로 로그인 시도 시 에러를 확인합니다.</doc>
-<status status="PASS" start="2026-05-01T09:10:45.046329" elapsed="2.243452"/>
+<status status="PASS" start="2026-05-01T09:13:46.175726" elapsed="4.077222"/>
 </test>
 <test id="s1-s1-s2-t4" name="TC-login-04" line="31">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:10:48.292917" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/login</msg>
-<msg time="2026-05-01T09:10:48.293075" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:13:52.121004" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/login</msg>
+<msg time="2026-05-01T09:13:52.121146" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:10:47.307703" elapsed="0.985654"/>
+<status status="PASS" start="2026-05-01T09:13:50.276251" elapsed="1.845089"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-05-01T09:10:48.294667" level="INFO">Clicks the element 'id=login'.</msg>
+<msg time="2026-05-01T09:13:52.122357" level="INFO">Clicks the element 'id=login'.</msg>
 <arg>id=login</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:48.293775" elapsed="0.095099"/>
+<status status="PASS" start="2026-05-01T09:13:52.121626" elapsed="0.091141"/>
 </kw>
 <kw name="Get Attribute" owner="Browser">
-<msg time="2026-05-01T09:10:48.493894" level="INFO">Attribute is: 'mr-sm-2 is-invalid form-control'</msg>
-<msg time="2026-05-01T09:10:48.494232" level="INFO">${user_class} = mr-sm-2 is-invalid form-control</msg>
+<msg time="2026-05-01T09:13:52.272707" level="INFO">Attribute is: 'mr-sm-2 is-invalid form-control'</msg>
+<msg time="2026-05-01T09:13:52.273012" level="INFO">${user_class} = mr-sm-2 is-invalid form-control</msg>
 <var>${user_class}</var>
 <arg>id=userName</arg>
 <arg>class</arg>
@@ -660,74 +660,74 @@ unless it is completely visible.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:48.389330" elapsed="0.104962"/>
+<status status="PASS" start="2026-05-01T09:13:52.213143" elapsed="0.059930"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${user_class}</arg>
 <arg>is-invalid</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2026-05-01T09:10:48.494683" elapsed="0.000880"/>
+<status status="PASS" start="2026-05-01T09:13:52.273632" elapsed="0.000930"/>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:10:48.499473" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:10:48.630428" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:13:52.278747" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:13:52.321233" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:10:48.495974" elapsed="0.134810"/>
+<status status="PASS" start="2026-05-01T09:13:52.274972" elapsed="0.046584"/>
 </kw>
-<msg time="2026-05-01T09:10:48.639231" level="INFO">Switching context to context=6df93ce7-0820-4081-88c6-6a5acf4ab245 in CURRENT</msg>
-<msg time="2026-05-01T09:10:48.643682" level="INFO">Successfully changed active context: context=6df93ce7-0820-4081-88c6-6a5acf4ab245</msg>
-<msg time="2026-05-01T09:10:48.646788" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:13:52.329550" level="INFO">Switching context to context=33d54030-0989-427b-9ab1-c0e012bc8cfc in CURRENT</msg>
+<msg time="2026-05-01T09:13:52.332701" level="INFO">Successfully changed active context: context=33d54030-0989-427b-9ab1-c0e012bc8cfc</msg>
+<msg time="2026-05-01T09:13:52.335445" level="INFO">Successfully closed Context</msg>
 <doc>필수 입력 필드를 비우고 로그인 시 테두리 색상(에러 클래스) 변화를 확인합니다.</doc>
-<status status="PASS" start="2026-05-01T09:10:47.304284" elapsed="1.326703"/>
+<status status="PASS" start="2026-05-01T09:13:50.271941" elapsed="2.049788"/>
 </test>
 <test id="s1-s1-s2-t5" name="TC-login-05" line="40">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:10:49.678119" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/login</msg>
-<msg time="2026-05-01T09:10:49.678246" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:13:54.151091" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/login</msg>
+<msg time="2026-05-01T09:13:54.151251" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:10:48.651439" elapsed="1.027013"/>
+<status status="PASS" start="2026-05-01T09:13:52.339184" elapsed="1.812331"/>
 </kw>
 <kw name="Login" owner="common_library">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:49.680238" level="INFO">Fills the text 'QALim' in the given field.</msg>
+<msg time="2026-05-01T09:13:54.153889" level="INFO">Fills the text 'QALim' in the given field.</msg>
 <arg>id=userName</arg>
 <arg>${id}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:49.679647" elapsed="0.059475"/>
+<status status="PASS" start="2026-05-01T09:13:54.152761" elapsed="0.101818"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:10:49.740172" level="INFO">Fills the text 'toolsQA!23' in the given field.</msg>
+<msg time="2026-05-01T09:13:54.255747" level="INFO">Fills the text 'toolsQA!23' in the given field.</msg>
 <arg>id=password</arg>
 <arg>${pw}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:49.739443" elapsed="0.010861"/>
+<status status="PASS" start="2026-05-01T09:13:54.254924" elapsed="0.035361"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-05-01T09:10:49.751221" level="INFO">Clicks the element 'id=login'.</msg>
+<msg time="2026-05-01T09:13:54.291474" level="INFO">Clicks the element 'id=login'.</msg>
 <arg>id=login</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:10:49.750598" elapsed="0.264667"/>
+<status status="PASS" start="2026-05-01T09:13:54.290622" elapsed="0.309275"/>
 </kw>
 <arg>${userName}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-05-01T09:10:49.678884" elapsed="0.336591"/>
+<status status="PASS" start="2026-05-01T09:13:54.151986" elapsed="0.448174"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-05-01T09:10:50.016440" level="INFO">Clicks the element 'text="Log out"'.</msg>
-<msg time="2026-05-01T09:11:50.079708" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2026-05-01T09:11:50.079913" level="INFO">See also file:///home/runner/work/webtest/webtest/results/playwright-log.txt for additional details.</msg>
-<msg time="2026-05-01T09:11:50.080387" level="FAIL">TimeoutError: locator.click: Timeout 60000ms exceeded.
+<msg time="2026-05-01T09:13:54.601222" level="INFO">Clicks the element 'text="Log out"'.</msg>
+<msg time="2026-05-01T09:14:54.671991" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-01T09:14:54.672191" level="INFO">See also file:///home/runner/work/webtest/webtest/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-05-01T09:14:54.672645" level="FAIL">TimeoutError: locator.click: Timeout 60000ms exceeded.
 Call log:
   - waiting for locator('text="Log out"')
 </msg>
@@ -735,7 +735,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="FAIL" start="2026-05-01T09:10:50.015718" elapsed="60.073041">TimeoutError: locator.click: Timeout 60000ms exceeded.
+<status status="FAIL" start="2026-05-01T09:13:54.600436" elapsed="60.080139">TimeoutError: locator.click: Timeout 60000ms exceeded.
 Call log:
   - waiting for locator('text="Log out"')
 </status>
@@ -747,7 +747,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for a condition, defined with Browser getter keywords to become True.</doc>
-<status status="NOT RUN" start="2026-05-01T09:11:50.089139" elapsed="0.000124"/>
+<status status="NOT RUN" start="2026-05-01T09:14:54.680838" elapsed="0.000093"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
 <arg>id=login</arg>
@@ -755,26 +755,26 @@ Call log:
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2026-05-01T09:11:50.089412" elapsed="0.000059"/>
+<status status="NOT RUN" start="2026-05-01T09:14:54.681073" elapsed="0.000097"/>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:11:50.092749" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:11:50.102933" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:14:54.684310" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:14:54.694677" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:11:50.089747" elapsed="0.013486"/>
+<status status="PASS" start="2026-05-01T09:14:54.681457" elapsed="0.013548"/>
 </kw>
-<msg time="2026-05-01T09:11:50.111639" level="INFO">Switching context to context=d480fb9d-177c-497a-a2c1-87549bf82d31 in CURRENT</msg>
-<msg time="2026-05-01T09:11:50.115457" level="INFO">Successfully changed active context: context=d480fb9d-177c-497a-a2c1-87549bf82d31</msg>
-<msg time="2026-05-01T09:11:50.118908" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:14:54.704315" level="INFO">Switching context to context=6d963af1-9ee8-47d0-8446-935ebd86e47e in CURRENT</msg>
+<msg time="2026-05-01T09:14:54.707362" level="INFO">Successfully changed active context: context=6d963af1-9ee8-47d0-8446-935ebd86e47e</msg>
+<msg time="2026-05-01T09:14:54.710698" level="INFO">Successfully closed Context</msg>
 <doc>로그인 후 로그아웃 버튼을 눌러 다시 로그인 페이지로 돌아오는지 확인합니다.</doc>
-<status status="FAIL" start="2026-05-01T09:10:48.647379" elapsed="61.456013">TimeoutError: locator.click: Timeout 60000ms exceeded.
+<status status="FAIL" start="2026-05-01T09:13:52.336008" elapsed="62.359182">TimeoutError: locator.click: Timeout 60000ms exceeded.
 Call log:
   - waiting for locator('text="Log out"')
 </status>
 </test>
-<status status="FAIL" start="2026-05-01T09:10:39.185972" elapsed="70.933689"/>
+<status status="FAIL" start="2026-05-01T09:13:38.941490" elapsed="75.770274"/>
 </suite>
 <suite id="s1-s1-s3" name="02 BookStore" source="/home/runner/work/webtest/webtest/tests/02_BookStore.robot">
 <kw name="setup" owner="common_library" type="SETUP">
@@ -783,118 +783,118 @@ Call log:
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<status status="PASS" start="2026-05-01T09:11:50.128566" elapsed="0.001962"/>
+<status status="PASS" start="2026-05-01T09:14:54.720719" elapsed="0.002114"/>
 </kw>
 <kw name="New Browser" owner="Browser">
-<msg time="2026-05-01T09:11:50.131167" level="INFO">Switching browser to browser=9b09c85f-0e29-4dc8-8c55-3e2c6d779b7d</msg>
-<msg time="2026-05-01T09:11:50.132630" level="INFO">Successfully changed active browser: browser=9b09c85f-0e29-4dc8-8c55-3e2c6d779b7d</msg>
-<msg time="2026-05-01T09:11:50.132709" level="INFO">Reusing existing browser with id: browser=9b09c85f-0e29-4dc8-8c55-3e2c6d779b7d</msg>
+<msg time="2026-05-01T09:14:54.723494" level="INFO">Switching browser to browser=018945ef-7c7c-44df-9fbb-b17e131cf03f</msg>
+<msg time="2026-05-01T09:14:54.725101" level="INFO">Successfully changed active browser: browser=018945ef-7c7c-44df-9fbb-b17e131cf03f</msg>
+<msg time="2026-05-01T09:14:54.725210" level="INFO">Reusing existing browser with id: browser=018945ef-7c7c-44df-9fbb-b17e131cf03f</msg>
 <arg>chromium</arg>
 <arg>headless=True</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-05-01T09:11:50.130693" elapsed="0.002074"/>
+<status status="PASS" start="2026-05-01T09:14:54.723003" elapsed="0.002272"/>
 </kw>
-<status status="PASS" start="2026-05-01T09:11:50.128279" elapsed="0.004614"/>
+<status status="PASS" start="2026-05-01T09:14:54.720425" elapsed="0.004951"/>
 </kw>
 <test id="s1-s1-s3-t1" name="TC-bookstore-01" line="10">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:11:51.122894" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/books</msg>
-<msg time="2026-05-01T09:11:51.123015" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:14:56.436806" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/books</msg>
+<msg time="2026-05-01T09:14:56.436910" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/books</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:11:50.135508" elapsed="0.987748"/>
+<status status="PASS" start="2026-05-01T09:14:54.728037" elapsed="1.709157"/>
 </kw>
 <kw name="Get Element Count" owner="Browser">
-<msg time="2026-05-01T09:11:51.181324" level="INFO">${count} = 0</msg>
+<msg time="2026-05-01T09:14:56.491645" level="INFO">${count} = 0</msg>
 <var>${count}</var>
 <arg>css=.rt-tr-group .action-buttons</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the count of elements found with ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:11:51.123567" elapsed="0.057848"/>
+<status status="PASS" start="2026-05-01T09:14:56.437488" elapsed="0.054254"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
-<msg time="2026-05-01T09:11:51.182722" level="FAIL">'0 &gt;= 1' should be true.</msg>
+<msg time="2026-05-01T09:14:56.493010" level="FAIL">'0 &gt;= 1' should be true.</msg>
 <arg>${count} &gt;= 1</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="FAIL" start="2026-05-01T09:11:51.181757" elapsed="0.001113">'0 &gt;= 1' should be true.</status>
+<status status="FAIL" start="2026-05-01T09:14:56.492071" elapsed="0.001091">'0 &gt;= 1' should be true.</status>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>Total books loaded: ${count}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-05-01T09:11:51.183066" elapsed="0.000093"/>
+<status status="NOT RUN" start="2026-05-01T09:14:56.493372" elapsed="0.000099"/>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:11:51.185752" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:11:51.188890" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:14:56.496480" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:14:56.499963" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:11:51.183435" elapsed="0.005632"/>
+<status status="PASS" start="2026-05-01T09:14:56.493828" elapsed="0.006409"/>
 </kw>
-<msg time="2026-05-01T09:11:51.197938" level="INFO">Switching context to context=1002c437-8b0e-4501-87ec-8b3aabc4e946 in CURRENT</msg>
-<msg time="2026-05-01T09:11:51.201756" level="INFO">Successfully changed active context: context=1002c437-8b0e-4501-87ec-8b3aabc4e946</msg>
-<msg time="2026-05-01T09:11:51.204350" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:14:56.510919" level="INFO">Switching context to context=4e7e9a7e-8b98-4ac0-b206-8696889b40b4 in CURRENT</msg>
+<msg time="2026-05-01T09:14:56.513846" level="INFO">Successfully changed active context: context=4e7e9a7e-8b98-4ac0-b206-8696889b40b4</msg>
+<msg time="2026-05-01T09:14:56.516492" level="INFO">Successfully closed Context</msg>
 <doc>페이지 진입 시 기본적으로 도서 목록이 로드되는지 확인합니다.</doc>
-<status status="FAIL" start="2026-05-01T09:11:50.132969" elapsed="1.056220">'0 &gt;= 1' should be true.</status>
+<status status="FAIL" start="2026-05-01T09:14:54.725455" elapsed="1.774970">'0 &gt;= 1' should be true.</status>
 </test>
 <test id="s1-s1-s3-t2" name="TC-bookstore-02" line="17">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:11:52.235879" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/books</msg>
-<msg time="2026-05-01T09:11:52.236035" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:14:58.310373" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/books</msg>
+<msg time="2026-05-01T09:14:58.310519" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/books</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:11:51.207668" elapsed="1.028647"/>
+<status status="PASS" start="2026-05-01T09:14:56.519755" elapsed="1.791048"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-05-01T09:11:52.237494" level="INFO">${search_keyword} = Learning JavaScript</msg>
+<msg time="2026-05-01T09:14:58.312003" level="INFO">${search_keyword} = Learning JavaScript</msg>
 <var>${search_keyword}</var>
 <arg>Learning JavaScript</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-05-01T09:11:52.236718" elapsed="0.000829"/>
+<status status="PASS" start="2026-05-01T09:14:58.311229" elapsed="0.000836"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-05-01T09:11:52.238252" level="INFO">${expected} = Addy Osmani</msg>
+<msg time="2026-05-01T09:14:58.312909" level="INFO">${expected} = Addy Osmani</msg>
 <var>${expected}</var>
 <arg>Addy Osmani</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-05-01T09:11:52.237749" elapsed="0.000551"/>
+<status status="PASS" start="2026-05-01T09:14:58.312328" elapsed="0.000636"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:11:52.239225" level="INFO">Fills the text 'Learning JavaScript' in the given field.</msg>
+<msg time="2026-05-01T09:14:58.313965" level="INFO">Fills the text 'Learning JavaScript' in the given field.</msg>
 <arg>id=searchBox</arg>
 <arg>${search_keyword}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:11:52.238500" elapsed="0.441100"/>
+<status status="PASS" start="2026-05-01T09:14:58.313217" elapsed="0.475118"/>
 </kw>
 <kw name="Get Element Count" owner="Browser">
-<msg time="2026-05-01T09:11:52.689716" level="INFO">${result_count} = 0</msg>
+<msg time="2026-05-01T09:14:58.804989" level="INFO">${result_count} = 0</msg>
 <var>${result_count}</var>
 <arg>css=.rt-tr-group &gt;&gt; text=${SEARCH_KEYWORD}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the count of elements found with ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:11:52.680049" elapsed="0.009727"/>
+<status status="PASS" start="2026-05-01T09:14:58.788741" elapsed="0.016320"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2026-05-01T09:11:52.690605" level="INFO">Argument types are:
+<msg time="2026-05-01T09:14:58.806103" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<msg time="2026-05-01T09:11:52.690737" level="FAIL">0 != 1</msg>
+<msg time="2026-05-01T09:14:58.806303" level="FAIL">0 != 1</msg>
 <arg>${result_count}</arg>
 <arg>1</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="FAIL" start="2026-05-01T09:11:52.690041" elapsed="0.000778">0 != 1</status>
+<status status="FAIL" start="2026-05-01T09:14:58.805373" elapsed="0.001025">0 != 1</status>
 </kw>
 <kw name="Get Text" owner="Browser">
 <arg>css=.rt-tbody</arg>
@@ -904,52 +904,52 @@ Call log:
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-05-01T09:11:52.691021" elapsed="0.000076"/>
+<status status="NOT RUN" start="2026-05-01T09:14:58.806576" elapsed="0.000081"/>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:11:52.694332" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:11:52.711212" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:14:58.810317" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:14:58.821814" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:11:52.691390" elapsed="0.020143"/>
+<status status="PASS" start="2026-05-01T09:14:58.806941" elapsed="0.015208"/>
 </kw>
-<msg time="2026-05-01T09:11:52.719003" level="INFO">Switching context to context=9d3b7c7d-c63d-4f1c-9e3a-2058bada6393 in CURRENT</msg>
-<msg time="2026-05-01T09:11:52.723364" level="INFO">Successfully changed active context: context=9d3b7c7d-c63d-4f1c-9e3a-2058bada6393</msg>
-<msg time="2026-05-01T09:11:52.726046" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:14:58.830932" level="INFO">Switching context to context=a111c508-e984-487e-81fe-47a28ce60877 in CURRENT</msg>
+<msg time="2026-05-01T09:14:58.836362" level="INFO">Successfully changed active context: context=a111c508-e984-487e-81fe-47a28ce60877</msg>
+<msg time="2026-05-01T09:14:58.838948" level="INFO">Successfully closed Context</msg>
 <doc>특정 키워드 검색 시 결과 테이블에 해당 도서만 남는지 확인합니다.</doc>
-<status status="FAIL" start="2026-05-01T09:11:51.204887" elapsed="1.506801">0 != 1</status>
+<status status="FAIL" start="2026-05-01T09:14:56.516945" elapsed="2.305375">0 != 1</status>
 </test>
 <test id="s1-s1-s3-t3" name="TC-bookstore-03" line="29">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:11:53.730453" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/books</msg>
-<msg time="2026-05-01T09:11:53.730615" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:15:00.688073" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/books</msg>
+<msg time="2026-05-01T09:15:00.688245" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/books</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:11:52.729343" elapsed="1.001590"/>
+<status status="PASS" start="2026-05-01T09:14:58.842578" elapsed="1.845942"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-05-01T09:11:53.732114" level="INFO">${invalid_keyword} = samsung</msg>
+<msg time="2026-05-01T09:15:00.689731" level="INFO">${invalid_keyword} = samsung</msg>
 <var>${invalid_keyword}</var>
 <arg>samsung</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-05-01T09:11:53.731339" elapsed="0.000828"/>
+<status status="PASS" start="2026-05-01T09:15:00.688910" elapsed="0.000883"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-05-01T09:11:53.733103" level="INFO">Fills the text 'samsung' in the given field.</msg>
+<msg time="2026-05-01T09:15:00.690832" level="INFO">Fills the text 'samsung' in the given field.</msg>
 <arg>id=searchBox</arg>
 <arg>${invalid_keyword}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:11:53.732379" elapsed="0.449856"/>
+<status status="PASS" start="2026-05-01T09:15:00.690033" elapsed="0.474332"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-05-01T09:12:54.240720" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2026-05-01T09:12:54.240931" level="INFO">See also file:///home/runner/work/webtest/webtest/results/playwright-log.txt for additional details.</msg>
-<msg time="2026-05-01T09:12:54.241097" level="FAIL">TimeoutError: locator.elementHandle: Timeout 60000ms exceeded.
+<msg time="2026-05-01T09:16:01.232684" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-01T09:16:01.232852" level="INFO">See also file:///home/runner/work/webtest/webtest/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-05-01T09:16:01.233001" level="FAIL">TimeoutError: locator.elementHandle: Timeout 60000ms exceeded.
 Call log:
   - waiting for locator('.rt-tbody')
 </msg>
@@ -960,101 +960,101 @@ Call log:
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="FAIL" start="2026-05-01T09:11:54.182672" elapsed="60.059024">TimeoutError: locator.elementHandle: Timeout 60000ms exceeded.
+<status status="FAIL" start="2026-05-01T09:15:01.164702" elapsed="60.068903">TimeoutError: locator.elementHandle: Timeout 60000ms exceeded.
 Call log:
   - waiting for locator('.rt-tbody')
 </status>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:12:54.244389" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:12:54.261050" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:16:01.236467" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:16:01.257520" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:12:54.242181" elapsed="0.019099"/>
+<status status="PASS" start="2026-05-01T09:16:01.234062" elapsed="0.023727"/>
 </kw>
-<msg time="2026-05-01T09:12:54.268661" level="INFO">Switching context to context=94b85094-4505-4839-8775-f3e6377ed12f in CURRENT</msg>
-<msg time="2026-05-01T09:12:54.272351" level="INFO">Successfully changed active context: context=94b85094-4505-4839-8775-f3e6377ed12f</msg>
-<msg time="2026-05-01T09:12:54.275288" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:16:01.266148" level="INFO">Switching context to context=18f5615a-da45-4644-b1d4-a35a9582fb3a in CURRENT</msg>
+<msg time="2026-05-01T09:16:01.269547" level="INFO">Successfully changed active context: context=18f5615a-da45-4644-b1d4-a35a9582fb3a</msg>
+<msg time="2026-05-01T09:16:01.272597" level="INFO">Successfully closed Context</msg>
 <doc>존재하지 않는 책 검색 시 결과가 없음을 확인합니다.</doc>
-<status status="FAIL" start="2026-05-01T09:11:52.726581" elapsed="61.534834">TimeoutError: locator.elementHandle: Timeout 60000ms exceeded.
+<status status="FAIL" start="2026-05-01T09:14:58.839701" elapsed="62.418233">TimeoutError: locator.elementHandle: Timeout 60000ms exceeded.
 Call log:
   - waiting for locator('.rt-tbody')
 </status>
 </test>
 <test id="s1-s1-s3-t4" name="TC-bookstore-04" line="37">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:12:55.269019" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/books</msg>
-<msg time="2026-05-01T09:12:55.269182" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:16:02.976086" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/books</msg>
+<msg time="2026-05-01T09:16:02.976235" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/books</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:12:54.278929" elapsed="0.990516"/>
+<status status="PASS" start="2026-05-01T09:16:01.276699" elapsed="1.699713"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-05-01T09:12:55.270683" level="INFO">${search_keyword} = Learning JavaScript Design Patterns</msg>
+<msg time="2026-05-01T09:16:02.977296" level="INFO">${search_keyword} = Learning JavaScript Design Patterns</msg>
 <var>${search_keyword}</var>
 <arg>Learning JavaScript Design Patterns</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-05-01T09:12:55.269899" elapsed="0.000838"/>
+<status status="PASS" start="2026-05-01T09:16:02.976689" elapsed="0.000663"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-05-01T09:12:55.271462" level="INFO">${expected_value} = https://demoqa.com/books?book=9781449331818</msg>
+<msg time="2026-05-01T09:16:02.978039" level="INFO">${expected_value} = https://demoqa.com/books?book=9781449331818</msg>
 <var>${expected_value}</var>
 <arg>https://demoqa.com/books?book=9781449331818</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-05-01T09:12:55.270974" elapsed="0.000537"/>
+<status status="PASS" start="2026-05-01T09:16:02.977556" elapsed="0.000519"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-05-01T09:12:55.272455" level="INFO">Clicks the element 'text="Learning JavaScript Design Patterns"'.</msg>
+<msg time="2026-05-01T09:16:02.978734" level="INFO">Clicks the element 'text="Learning JavaScript Design Patterns"'.</msg>
 <arg>text="${search_keyword}"</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-05-01T09:12:55.271713" elapsed="0.493758"/>
+<status status="PASS" start="2026-05-01T09:16:02.978246" elapsed="0.517711"/>
 </kw>
 <kw name="Get Url" owner="Browser">
-<msg time="2026-05-01T09:12:56.833161" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2026-05-01T09:12:56.833334" level="INFO">See also file:///home/runner/work/webtest/webtest/results/playwright-log.txt for additional details.</msg>
-<msg time="2026-05-01T09:12:56.833484" level="FAIL">URL 'https://demoqa.com/books?search=9781449331818' (str) should be 'https://demoqa.com/books?book=9781449331818' (str)</msg>
+<msg time="2026-05-01T09:16:04.557761" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-01T09:16:04.557914" level="INFO">See also file:///home/runner/work/webtest/webtest/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-05-01T09:16:04.558059" level="FAIL">URL 'https://demoqa.com/books?search=9781449331818' (str) should be 'https://demoqa.com/books?book=9781449331818' (str)</msg>
 <arg>==</arg>
 <arg>${expected_value}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="FAIL" start="2026-05-01T09:12:55.765839" elapsed="1.068053">URL 'https://demoqa.com/books?search=9781449331818' (str) should be 'https://demoqa.com/books?book=9781449331818' (str)</status>
+<status status="FAIL" start="2026-05-01T09:16:03.496376" elapsed="1.062083">URL 'https://demoqa.com/books?search=9781449331818' (str) should be 'https://demoqa.com/books?book=9781449331818' (str)</status>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:12:56.836559" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:12:56.841319" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:16:04.561253" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:16:04.567342" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:12:56.834307" elapsed="0.007161"/>
+<status status="PASS" start="2026-05-01T09:16:04.558872" elapsed="0.008784"/>
 </kw>
-<msg time="2026-05-01T09:12:56.849622" level="INFO">Switching context to context=1b136185-efa9-4ce6-b0bc-cf4568959f6c in CURRENT</msg>
-<msg time="2026-05-01T09:12:56.853164" level="INFO">Successfully changed active context: context=1b136185-efa9-4ce6-b0bc-cf4568959f6c</msg>
-<msg time="2026-05-01T09:12:56.859130" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:16:04.576218" level="INFO">Switching context to context=f2dc01fb-9ac4-4fde-a416-daa9c0005f69 in CURRENT</msg>
+<msg time="2026-05-01T09:16:04.581385" level="INFO">Successfully changed active context: context=f2dc01fb-9ac4-4fde-a416-daa9c0005f69</msg>
+<msg time="2026-05-01T09:16:04.585415" level="INFO">Successfully closed Context</msg>
 <doc>책 클릭 시 상세 페이지로 이동하며 ISBN 등 정보가 일치하는지 확인합니다.</doc>
-<status status="FAIL" start="2026-05-01T09:12:54.275850" elapsed="2.565725">URL 'https://demoqa.com/books?search=9781449331818' (str) should be 'https://demoqa.com/books?book=9781449331818' (str)</status>
+<status status="FAIL" start="2026-05-01T09:16:01.273267" elapsed="3.294578">URL 'https://demoqa.com/books?search=9781449331818' (str) should be 'https://demoqa.com/books?book=9781449331818' (str)</status>
 </test>
 <test id="s1-s1-s3-t5" name="TC-bookstore-05" line="45">
 <kw name="New Page" owner="Browser" type="SETUP">
-<msg time="2026-05-01T09:12:57.849188" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/books</msg>
-<msg time="2026-05-01T09:12:57.849307" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-05-01T09:16:06.350905" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/books</msg>
+<msg time="2026-05-01T09:16:06.351011" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://demoqa.com/books</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-05-01T09:12:56.862816" elapsed="0.986683"/>
+<status status="PASS" start="2026-05-01T09:16:04.589929" elapsed="1.761288"/>
 </kw>
 <kw name="Select Options By" owner="Browser">
-<msg time="2026-05-01T09:12:57.850705" level="INFO">Selects the option(s) 5 by attribute SelectAttribute.value from element css=select[aria-label="rows per page"].</msg>
-<msg time="2026-05-01T09:13:57.934079" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2026-05-01T09:13:57.934279" level="INFO">See also file:///home/runner/work/webtest/webtest/results/playwright-log.txt for additional details.</msg>
-<msg time="2026-05-01T09:13:57.934436" level="FAIL">TimeoutError: locator.selectOption: Timeout 60000ms exceeded.
+<msg time="2026-05-01T09:16:06.352228" level="INFO">Selects the option(s) 5 by attribute SelectAttribute.value from element css=select[aria-label="rows per page"].</msg>
+<msg time="2026-05-01T09:17:06.424154" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-01T09:17:06.424324" level="INFO">See also file:///home/runner/work/webtest/webtest/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-05-01T09:17:06.424468" level="FAIL">TimeoutError: locator.selectOption: Timeout 60000ms exceeded.
 Call log:
   - waiting for locator('select[aria-label="rows per page"]')
 </msg>
@@ -1064,7 +1064,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="FAIL" start="2026-05-01T09:12:57.849810" elapsed="60.084880">TimeoutError: locator.selectOption: Timeout 60000ms exceeded.
+<status status="FAIL" start="2026-05-01T09:16:06.351497" elapsed="60.073217">TimeoutError: locator.selectOption: Timeout 60000ms exceeded.
 Call log:
   - waiting for locator('select[aria-label="rows per page"]')
 </status>
@@ -1076,36 +1076,36 @@ Call log:
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the count of elements found with ``selector``.</doc>
-<status status="NOT RUN" start="2026-05-01T09:13:57.934993" elapsed="0.000112"/>
+<status status="NOT RUN" start="2026-05-01T09:17:06.424975" elapsed="0.000085"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
 <arg>${rows}</arg>
 <arg>5</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="NOT RUN" start="2026-05-01T09:13:57.935241" elapsed="0.000056"/>
+<status status="NOT RUN" start="2026-05-01T09:17:06.425231" elapsed="0.000067"/>
 </kw>
 <kw name="Close Page" owner="Browser" type="TEARDOWN">
-<msg time="2026-05-01T09:13:57.937941" level="INFO">Closing current active page.</msg>
-<msg time="2026-05-01T09:13:57.955405" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<msg time="2026-05-01T09:17:06.428446" level="INFO">Closing current active page.</msg>
+<msg time="2026-05-01T09:17:06.444965" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
-<status status="PASS" start="2026-05-01T09:13:57.935556" elapsed="0.020101"/>
+<status status="PASS" start="2026-05-01T09:17:06.425565" elapsed="0.019763"/>
 </kw>
-<msg time="2026-05-01T09:13:57.965919" level="INFO">Switching context to context=e56bc069-0fd9-4c53-ad4c-5cfe315c36a2 in CURRENT</msg>
-<msg time="2026-05-01T09:13:57.969215" level="INFO">Successfully changed active context: context=e56bc069-0fd9-4c53-ad4c-5cfe315c36a2</msg>
-<msg time="2026-05-01T09:13:57.972246" level="INFO">Successfully closed Context</msg>
+<msg time="2026-05-01T09:17:06.454980" level="INFO">Switching context to context=f55e1760-70a4-44fb-856b-d06e04db9a65 in CURRENT</msg>
+<msg time="2026-05-01T09:17:06.457974" level="INFO">Successfully changed active context: context=f55e1760-70a4-44fb-856b-d06e04db9a65</msg>
+<msg time="2026-05-01T09:17:06.463027" level="INFO">Successfully closed Context</msg>
 <doc>테이블 표시 줄 수를 변경했을 때 UI가 반응하는지 확인합니다.</doc>
-<status status="FAIL" start="2026-05-01T09:12:56.859657" elapsed="61.096212">TimeoutError: locator.selectOption: Timeout 60000ms exceeded.
+<status status="FAIL" start="2026-05-01T09:16:04.586181" elapsed="61.859371">TimeoutError: locator.selectOption: Timeout 60000ms exceeded.
 Call log:
   - waiting for locator('select[aria-label="rows per page"]')
 </status>
 </test>
-<status status="FAIL" start="2026-05-01T09:11:50.123430" elapsed="127.849530"/>
+<status status="FAIL" start="2026-05-01T09:14:54.715546" elapsed="131.748267"/>
 </suite>
-<status status="FAIL" start="2026-05-01T09:10:30.347585" elapsed="207.629047"/>
+<status status="FAIL" start="2026-05-01T09:13:28.699779" elapsed="217.767838"/>
 </suite>
-<status status="FAIL" start="2026-05-01T09:10:30.321563" elapsed="207.655807"/>
+<status status="FAIL" start="2026-05-01T09:13:28.668112" elapsed="217.800218"/>
 </suite>
 <statistics>
 <total>
@@ -1122,8 +1122,8 @@ Call log:
 </suite>
 </statistics>
 <errors>
-<msg time="2026-05-01T09:10:30.484540" level="ERROR">Error in file '/home/runner/work/webtest/webtest/common_library.robot' on line 2: Variable file '../config.py' does not exist.</msg>
-<msg time="2026-05-01T09:10:39.188485" level="ERROR">Error in file '/home/runner/work/webtest/webtest/common_library.robot' on line 2: Variable file '../config.py' does not exist.</msg>
-<msg time="2026-05-01T09:11:50.126033" level="ERROR">Error in file '/home/runner/work/webtest/webtest/common_library.robot' on line 2: Variable file '../config.py' does not exist.</msg>
+<msg time="2026-05-01T09:13:28.846333" level="ERROR">Error in file '/home/runner/work/webtest/webtest/common_library.robot' on line 2: Variable file '../config.py' does not exist.</msg>
+<msg time="2026-05-01T09:13:38.943861" level="ERROR">Error in file '/home/runner/work/webtest/webtest/common_library.robot' on line 2: Variable file '../config.py' does not exist.</msg>
+<msg time="2026-05-01T09:14:54.717927" level="ERROR">Error in file '/home/runner/work/webtest/webtest/common_library.robot' on line 2: Variable file '../config.py' does not exist.</msg>
 </errors>
 </robot>
