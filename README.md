@@ -1,5 +1,5 @@
 ```markdown
-![CI](https://github.com/YeongjunLim/webtest/actions/workflows/[워크플로우파일명].yml/badge.svg)
+![CI](https://github.com/YeongjunLim/webtest/actions/workflows/ci.yml/badge.svg)
 ```
 
 ## 📊 [테스트 실행 결과 리포트 보기 (클릭)](https://yeongjunlim.github.io/webtest/)
@@ -48,8 +48,6 @@ Note: 위 링크를 통해 실제 수행된 15개 테스트 케이스의 상세 
 
 ### ✅ CAPTCHA 대응 전략
 자동화가 어려운 CAPTCHA 구간에 매몰되지 않고, 이를 인지한 시스템의 '에러 메시지 처리'를 검증 포인트로 설정하여 테스트 커버리지를 전략적으로 확보했습니다. 
-
-로 교체하세요:
 
 ## ⚙️ 사전 요구사항 (Prerequisites)
 
